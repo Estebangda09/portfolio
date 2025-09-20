@@ -1,0 +1,17 @@
+
+/*========== dark light mode ==========*/
+let darkModeIcon = document.querySelector('#modo-dark-icon');
+
+darkModeIcon.onclick = () => {
+    // Cambia el ícono del sol a la luna y viceversa
+    if (darkModeIcon.classList.contains('bx-sun')) {
+        darkModeIcon.classList.replace('bx-sun', 'bx-moon');
+    } else {
+        darkModeIcon.classList.replace('bx-moon', 'bx-sun');
+    }
+    
+    
+    document.body.classList.toggle('modo-dark');
+};
+
+
